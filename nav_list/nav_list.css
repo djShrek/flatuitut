@@ -1,0 +1,70 @@
+@font-face {
+  font-family: 'liga';
+  src: url("../font/websymbolsligaregular.eot");
+  src: url("../font/websymbolsligaregular.eot?#iefix") format("embedded-opentype"), url("../font/websymbolsligaregular.woff") format("woff"), url("../font/websymbolsligaregular.ttf") format("truetype"), url("../font/websymbolsligaregular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+body {
+  margin: 35px;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Helvetica", arial;
+  font-weight: normal;
+  font-size: 16px;
+  color: #666; }
+
+.ui_navlist {
+  list-style-type: none;
+  float: left;
+  max-width: 320px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: #4f3b3b;
+  color: white;
+  -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.55);
+  -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.55);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.55); }
+
+.ui_navlist li {
+  overflow: hidden;
+  height: 103px;
+  border-bottom: 1px solid #372929; }
+
+.ui_navlist div {
+  float: left;
+  height: 100%;
+  background: #f4d37a; }
+
+.ui_navlist span {
+  float: right;
+  width: 20px;
+  margin-right: -20px;
+  font-family: "liga";
+  color: #f4d37a;
+  text-indent: -6px; }
+
+.ui_navlist div a {
+  display: block;
+  width: 70px;
+  height: 35px;
+  line-height: 34px;
+  text-align: center;
+  font-size: 25px;
+  font-family: "liga";
+  text-decoration: none;
+  color: #4f3b3b;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
+
+.ui_navlist div a:hover {
+  background: #cd9c50;
+  color: white; }
+
+.ui_navlist img {
+  display: block;
+  float: left;
+  border: 5px solid;
+  border-color: #372929; }

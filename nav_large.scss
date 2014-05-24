@@ -1,0 +1,11 @@
+@import "../Import";
+
+.nav_large {
+    max-width: 895px;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: $yellow;
+    @include borderRadius(5px);
+    @include boxShadow(2px 2px 3px rgba(0,0,0.3));
+}
