@@ -34,7 +34,15 @@ body {
 .ui_navlist div {
   float: left;
   height: 100%;
-  background: #f4d37a; }
+  background: #f4d37a;
+  margin-left: -110%;
+  -webkit-transition: margin-left 0.3s;
+  -moz-transition: margin-left 0.3s;
+  -o-transition: margin-left 0.3s;
+  transition: margin-left 0.3s; }
+
+.ui_navlist div.show {
+  margin-left: 0; }
 
 .ui_navlist span {
   float: right;
@@ -67,4 +75,97 @@ body {
   display: block;
   float: left;
   border: 5px solid;
-  border-color: #372929; }
+  border-color: #372929;
+  margin: 15px 10px 15px 15px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
+
+.ui_navlist p {
+  overflow: hidden;
+  height: 67px;
+  line-height: 22px;
+  font-size: 14px;
+  margin: 0;
+  padding: 20px 20px 0 0;
+  -webkit-transition: opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  transition: opacity 0.3s; }
+
+.ui_navlist li > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: white;
+  text-decoration: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
+
+.ui_navlist li > a:hover {
+  background: #f4d37a;
+  color: #4f3b3b; }
+
+.ui_navlist li > a:hover img {
+  border-color: #ae9757; }
+
+.ui_searchlist .ui_navlist {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none; }
+
+.ui_searchlist {
+  float: left;
+  max-width: 320px;
+  width: 100%;
+  background: #f0e9dd;
+  -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.55);
+  -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.55);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.55); }
+
+.ui_searchlist > span {
+  margin: 0 20px;
+  line-height: 47px;
+  text-align: center;
+  font-family: "liga";
+  font-size: 20px;
+  color: #4f3b3b; }
+
+.ui_searchlist > span:first-child {
+  display: block;
+  width: 100%;
+  height: 12px;
+  line-height: 12px;
+  margin: 46px 0 -58px 0;
+  font-size: 18px;
+  color: #f0e9dd; }
+
+.ui_searchlist > input {
+  padding: 0;
+  width: 65%;
+  line-height: 47px;
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  color: #4f3b3b;
+  outline: none; }
+
+.ui_searchlist > div {
+  overflow: hidden;
+  position: relative; }
+
+@media screen and (max-width: 320px) {
+  .ui_navlist span {
+    margin-top: 45px; }
+
+  .ui_navlist .show ~ p {
+    opacity: 0; }
+
+  .ui_navlist .show ~ img {
+    margin-left: 40px; } }

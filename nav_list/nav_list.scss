@@ -22,6 +22,12 @@
     float: left;
     height: 100%;
     background: $yellow;
+    margin-left: -110%;
+    @include transition(margin-left .3s);
+}
+
+.ui_navlist div.show {
+    margin-left: 0;
 }
 
 .ui_navlist span {
@@ -56,4 +62,99 @@
     float: left;
     border: 5px solid;
     border-color: #372929;
+    margin: 15px 10px 15px 15px;
+    @include borderRadius(50%);
+    @include transition(all .3s);
 }
+
+.ui_navlist p {
+    overflow: hidden;
+    height: 67px;
+    line-height: 22px;
+    font-size: 14px;
+    margin: 0;
+    padding: 20px 20px 0 0;
+    @include transition(opacity .3s);
+}
+
+.ui_navlist li > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: $textTwo;
+    text-decoration: none;
+    @include transition(all .3s);
+}
+
+.ui_navlist li > a:hover {
+    background: $yellow;
+    color: $textOne;
+}
+
+.ui_navlist li > a:hover img{
+    border-color: #ae9757;
+}
+
+.ui_searchlist .ui_navlist {
+    @include boxShadow(none)
+}
+
+.ui_searchlist {
+    float: left;
+    max-width: 320px;
+    width: 100%;
+    background: $cream;
+    @include boxShadow(1px 1px 2px rgba(0,0,0, .55));
+}
+
+.ui_searchlist > span {
+    margin: 0 20px;
+    line-height: 47px;
+    text-align: center;
+    font-family: "liga";
+    font-size: 20px;
+    color: $textOne;
+}
+
+.ui_searchlist > span:first-child {
+    display: block;
+    width: 100%;
+    height: 12px;
+    line-height: 12px;
+    margin: 46px 0 -58px 0;
+    font-size: 18px;
+    color: $cream;
+}
+
+.ui_searchlist > input {
+    padding: 0;
+    width: 65%;
+    line-height: 47px;
+    border: none;
+    background: transparent;
+    font-size: 16px;
+    color: $textOne;
+    outline: none;
+}
+
+.ui_searchlist > div {
+    overflow: hidden;
+    position: relative;
+}
+
+
+
+// Search List Navigation
+
+@media screen and (max-width: 320px){
+    .ui_navlist span {
+        margin-top: 45px;
+    }
+    .ui_navlist .show ~ p {
+        opacity: 0;
+    }
+    .ui_navlist .show ~ img {
+        margin-left: 40px;
+    }
+}
+
